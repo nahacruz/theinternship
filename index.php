@@ -1,6 +1,6 @@
 <?php
 $number0ftreesperdistrictpertype = array(
-	"kampala_district" => array(
+	"kampala" => array(
 
 		"conifer" =>200,
 		"aspen" =>500,
