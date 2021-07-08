@@ -55,7 +55,7 @@ echo $_SESSION["sumofkampala_trees"]. "<br>";
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>The Internship</title>
+	<title>The Internship is on the 3rd week</title>
 </head>
 <body>
 	< form method="POST" action "master.php">
