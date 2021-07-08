@@ -55,12 +55,15 @@ echo $_SESSION["sumofkampala_trees"]. "<br>";
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>The Internship</title>
+	<title>The Internship </title>
 </head>
 <body>
-	< form method="POST" action "master.php">
+
+	<form method="POST" action="master.php">
 	<label>sumoftrees</label>
-	<input type-"number" name- +>
+	<input type="number" name="sumoftrees">
+	<hr>
+	<button type="submit">Submit</button>
 	<a href="master.php"> Master page</a>
 </body>
 </html>
