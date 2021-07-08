@@ -1,6 +1,6 @@
 <?php
 $number0ftreesperdistrictpertype = array(
-	"kampala" => array(
+	"kampala_district" => array(
 
 		"conifer" =>200,
 		"aspen" =>500,
@@ -55,7 +55,7 @@ echo $_SESSION["sumofkampala_trees"]. "<br>";
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>The Internship is on the 3rd week</title>
+	<title>The Internship</title>
 </head>
 <body>
 	< form method="POST" action "master.php">
