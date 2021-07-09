@@ -19,7 +19,7 @@ $number0ftreesperdistrictpertype = array(
 	"Kabale" => array(
 
 		"muvule treer" =>90,
-		"Eucaliptus" =>703,
+		"Eucaliptus" =>803,
 		"Musizi" =>763,
 		"Musabu" =>29,
 	),
