@@ -46,7 +46,7 @@ else {
 }
     
 $sumofMasaba_trees=array(8984,29,89);
-echo " ------sum(sumofMasaba_trees)------ =" .array_sum($sumofkampala_trees)."---------<br>";
+echo " ------sum(sumofMasaba_trees)------ =" .array_sum($sumofMasaba_trees)."---------<br>";
 
 session_start();
 $_SESSION['sumofMasaba_trees'] ="9102";
