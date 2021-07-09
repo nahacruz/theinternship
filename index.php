@@ -1,24 +1,27 @@
 <?php
 $number0ftreesperdistrictpertype = array(
-	"kampala" => array(
-
-		"conifer" =>200,
-		"aspen" =>500,
-		"cottonwood" =>800,
-	),
-
 	"wakiso" => array(
 
-		"conifer" =>700,
-		"aspen" =>350,
-		"cottonwood" =>1000,
+		"muvule tree" =>569,
+		"Eucaliptus" =>80003,
+		"Musizi" =>767363,
+		"Musabu" =>8984,
 	),
 
-	"mukono" => array(
+	"Kabale" => array(
 
-		"conifer" =>400,
-		"aspen" =>900,
-		"cottonwood" =>150,
+		"muvule tree" =>69,
+		"Eucaliptus" =>803,
+		"Musizi" =>7363,
+		"Musabu" =>89,
+	),
+
+	"Kabale" => array(
+
+		"muvule treer" =>90,
+		"Eucaliptus" =>703,
+		"Musizi" =>763,
+		"Musabu" =>29,
 	),
 );
 
@@ -30,10 +33,10 @@ foreach ($number0ftreesperdistrictpertype as $index => $value) {
 	}
 }	
     
-$sumofalldistricts=array(200,500,800,700,350,1000,400,900,150);
+$sumofalldistricts=array(500,80003,767363,8984,60,803,7363,89,90,803,7363,29);
 echo "-----sum(sumofalldistricts)------# " .array_sum($sumofalldistricts)."------<br>";
 
-setcookie("sumofalldistricts","5000",time()+3600);
+setcookie("sumofalldistricts","873450",time()+3600);
 if (isset($_COOKIE['sumofalldistricts'])) {
     echo $_COOKIE['sumofalldistricts'];
 setcookie("sumofalldistricts","",time()-60);	
@@ -42,12 +45,13 @@ else {
      echo "-------the cookie doesnot exist-----" . "<br>";
 }
     
-$sumofkampala_trees=array(200,500,800);
-echo " ------sum(sumofkampala_trees)------ =" .array_sum($sumofkampala_trees)."---------<br>";
+$sumofMasaba_trees=array(8984,29,89);
+echo " ------sum(sumofMasaba_trees)------ =" .array_sum($sumofkampala_trees)."---------<br>";
 
 session_start();
-$_SESSION['sumofkampala_trees'] ="1500";
-echo $_SESSION["sumofkampala_trees"]. "<br>";
+$_SESSION['sumofMasaba_trees'] ="9102";
+echo $_SESSION["sumofMasaba_trees"]. "<br>";
+
 
 ?>
 
