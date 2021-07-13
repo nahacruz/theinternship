@@ -7,7 +7,7 @@
  mysqli_select_db($mysqli_connection,"nema_register");
 
 
- $mysqli_connection->query("CREATE TABLE districts(district_id int(11) NOT NULL AUTO INCREMENT,PRIMARY KEY(district_id),district_name varchar(20) NOT NULL UNIQUE)");
+ $mysqli_connection->query("CREATE TABLE districts(district_id int(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY(district_id),district_name varchar(20) NOT NULL UNIQUE)");
 
  $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('WAKISO')");
  $mysqli_connection->query("DELETE FROM districts WHERE district_id=1");
@@ -26,7 +26,7 @@
  else  $mysqli_connection->error;
 
 
- $mysqli_connection->query("CREATE TABLE tree_types(treetype_id int(11) NOT NULL,PRIMARY KEY(treetype_id),treetype_name varchar(20) NOT NULL UNIQUE)");
+ $mysqli_connection->query("CREATE TABLE tree_types(treetype_id int(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY(treetype_id),treetype_name varchar(20) NOT NULL UNIQUE)");
 
 
  $mysqli_connection->query("INSERT INTO tree_types(treetype_id,treetype_name)VALUES(50'muvule')");
@@ -42,11 +42,11 @@
 
  $mysqli_connection->query("UPDATE tree_types SET treetype_name='mutuba' WHERE treetype_id=51");
 
- // $mysqli_connection->query("CREATE TABLE members(member_id int(11) NOT NULL,PRIMARY KEY(member_id),member_name varchar(20) NOT NULL UNIQUE,PASSWORD varchar(100) NOT NULL,EMAIL_ADDRESS varchar(30) NOT NULL UNIQUE,districts_id int(11) NOT NULL, FOREIGN KEY(districts_id) REFERENCES districts(district_id))");
+ $mysqli_connection->query("CREATE TABLE members(member_id int(11) NOT NULL,PRIMARY KEY(member_id),member_name varchar(20) NOT NULL UNIQUE,PASSWORD varchar(100) NOT NULL,EMAIL_ADDRESS varchar(30) NOT NULL UNIQUE,districts_id int(11) NOT NULL, FOREIGN KEY(districts_id) REFERENCES districts(district_id))");
 
- // $insert = $mysqli_connection->query("INSERT INTO members(member_id,member_name,PASSWORD,EMAIL_ADDRESS,district_id)VALUES(10,'Florence','1234','naksflo@gmail.com','7')");
+ $insert = $mysqli_connection->query("INSERT INTO members(member_id,member_name,PASSWORD,EMAIL_ADDRESS,district_id)VALUES(10,'Florence','1234','naksflo@gmail.com','7')");
 
- // $insert = $mysqli_connection->query("INSERT INTO members(member_id,member_name,PASSWORD,EMAIL_ADDRESS,district_id)VALUES(12,'Juliet','5678','julijespa@gmail.com','9')");
+ $insert = $mysqli_connection->query("INSERT INTO members(member_id,member_name,PASSWORD,EMAIL_ADDRESS,district_id)VALUES(12,'Juliet','5678','julijespa@gmail.com','9')");
 
 
  $mysqli_connection->query("CREATE TABLE trees(tree_id int(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY(tree_id),member_id int(11) NOT NULL, FOREIGN KEY(member_id) REFERENCES members(member_id),district_id int(11) NOT NULL, FOREIGN KEY(district_id) REFERENCES districts(district_id),number_of_trees int(50) NOT NULL,treetype_id int(11) NOT NULL,FOREIGN KEY (treetype_id) REFERENCES tree_types(treetype_id))");
