@@ -9,4 +9,4 @@
 
  $serviceCode - $_POST['serviceCode'];
 
- echo "CON Welcome to naha ug";
+ echo "END Welcome to naha ug";
