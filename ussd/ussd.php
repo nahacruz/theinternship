@@ -1,5 +1,5 @@
  <?php
- header("content-type:text/plain");
+ header("content-type:text/plane");
 
  $phone_number - $_POST['phoneNumber'];
 
@@ -16,9 +16,9 @@
  	
  	$response = "CON Welcome to the NEMA (u) limited";
 
- 	$response = "\n 1. Register";
+ 	$response .= "\n 1. Register";
 
- 	$response = "\n 2. Add a tree";
+ 	$response .= "\n 2. Add a tree";
 
  	echo $response;
  
