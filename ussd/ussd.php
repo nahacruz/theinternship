@@ -9,7 +9,7 @@
 
  $serviceCode - $_POST['serviceCode'];
 
- $counter = explode("*",$testFromUser);
+ $inputArray = explode("*",$testFromUser);
 
  
  if (empty($testFromUser)) {
