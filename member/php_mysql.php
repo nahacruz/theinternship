@@ -16,7 +16,7 @@
  if($insert) echo "inserted successfully";
  else $mysqli_connection->error;
 
- $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('KAMPALA')"); 	
+ $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('KAMPALA')");    
  $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('LUGAZI')");
  $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('JINJA')");
  $mysqli_connection->query("INSERT INTO districts(district_name)VALUES('KAWEMPE')");
@@ -65,25 +65,3 @@
  $mysqli_connection->query("INSERT INTO trees(member_id,district_id,number_of_trees,treetype_id)VALUES(12,2,1000,51)");
 
  $insert = $mysqli_connection->query("INSERT INTO trees(member_id,district_id,number_of_trees,treetype_id)VALUES(14,5,700,52)");
-
- 
-
-
- 
- 
-
-
-
-
-
-
-
-
-
- 
-
-
- 	
- 
-
- 

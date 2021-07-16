@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
  <?php require('php_mysql.php') ?>
@@ -11,7 +11,7 @@
 
 	<?php include 'form.php'; 
 
-	  $users = $mysqli_connection->query("SELECT users.ID,users.NAME,users.PHONE_NUMBER,users.EMAIL_ADDRESS,districts.NAME AS district_name FROM users,districts WHERE users.DISTRICT_ID = districts.ID");
+	  $users = $mysqli_connection->query("SELECT members.member_id,members.member_name,members.EMAIL_ADDRESS,districts.district_name AS district_name FROM members,districts WHERE members.districts_id = districts.district_id");
 
 	?>
 
@@ -25,7 +25,6 @@
         		<thead>
         			<th>ID</th>
         			<th>NAME</th>
-        			<th>PHONE</th>
         			<th>EMAIL</th>
         			<th>DISTRICT OF ORIGIN</th>
         		</thead>

@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Register</title>
-	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
 </head>
 <body>
 
@@ -23,9 +23,6 @@
         				<br><label>Name</label>
         				<input type="text" name="person_name" class="form-control" required>
 
-        				<br><label>Phone Number</label>
-        				<input type="text" name="phone_number"class="form-control" required>
-
         				<br><label>Email</label>
         				<input type="email" name="email_address" class="form-control" required>
 
@@ -34,7 +31,7 @@
 
         				<?php 
 
-        				$results = $mysqli_connection->query("SELECT ID, NAME FROM districts ORDER BY ID ASC");
+        				$results = $mysqli_connection->query("SELECT district_id, district_name FROM districts ORDER BY district_id ASC");
         				 ?>
 
         				<br><label>District of origin</label>
@@ -44,8 +41,8 @@
 
         					foreach ($results as $key => $value) {
 
-	                           $id = $value["ID"];
-	                           $name = $value["NAME"];
+	                           $id = $value["district_id"];
+	                           $name = $value["district_name"];
 
 	                           echo "<option value='$id'>$name</option>";
 
