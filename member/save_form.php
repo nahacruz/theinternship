@@ -19,8 +19,6 @@ if($user_password != $confirm_user_password) {
 	exit();
 	
 }
-$insert = $mysqli_connection->query("INSERT INTO members(member_id,member_name,PASSWORD,EMAIL_ADDRESS,district_id)VALUES(12,'Juliet','5678','julijespa@gmail.com','9')");
-
 
 $mysqli_connection->query("INSERT INTO members(member_name,districts_id,PASSWORD,EMAIL_ADDRESS)VALUES('$pName','$district','$user_password','$emailAddress')");
 
