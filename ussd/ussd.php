@@ -11,17 +11,43 @@
 
  $inputArray = explode("*",$testFromUser);
 
- 
- if (empty($testFromUser)) {
- 	
- 	$response = "CON Welcome to the NEMA (u) limited";
+ switch ($level) {
+     
+     case 0: 
 
- 	$response .= "\n 1. Register";
+            $response = "CON Welcome to the NEMA (u) limited";
 
- 	$response .= "\n 2. Add a tree";
+    $response .= "\n 1. Register";
 
- 	echo $response;
- 
- }else{
-     echo "END we have".$testFromUser;
+    $response .= "\n 2. Add a tree";
+
+    echo $response;
+        
+         break;
+
+     case 1:
+             
+
+             break;
+
+      case 2:
+                
+
+                 break;       
+     
+     default:
+         
+         echo "The option selected is not valid";
+         
+
+         break;
  }
+
+ 
+ // if (empty($testFromUser)) {
+ 	
+ 
+ 
+ // }else{
+ //     echo "END we have".$testFromUser;
+ // }

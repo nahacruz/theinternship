@@ -9,6 +9,6 @@ if (!isset($_POST['district_name'])) {
 
 $d_name = $_POST['district_name'];
 
-$msqli_connection->query("INSERT INTO districts(district_name)VALUES('$d_name')");
+$mysqli_connection->query("INSERT INTO districts(district_name)VALUES('$d_name')");
 
 header("Location:districts.php");
