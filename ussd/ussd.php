@@ -37,9 +37,20 @@
         
          break;
 
-     case 2:
+     case 2: //text =0*1 OR 0*2
 
-            echo "CON At Index o = ".$inputArray[0]."\n Index 1 =".$inputArray[1]; 
+             if($inputArray[1] == 1) {//wants to register
+             
+             echo "CON What is your name?";
+
+
+             }elseif ($inputArray[1] == 2) {//wants to add tree
+              
+             }else{
+
+                echo "End invalid option";
+             }
+
              
 
              break;
