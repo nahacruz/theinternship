@@ -43,13 +43,13 @@ switch ($level) {
 
 	case 2:		// text = 0*1  OR  0*2 
 
-		 if($inputArray[1]   ==  1) {//he wants to register// 
+		 if($inputArray[1]   ==  1) {//wants to register// 
 
 		 	echo "CON What is is your name?";
 
 
 
-		 }elseif ($inputArray[1] == 2) {//he wants to add a tree
+		 }elseif ($inputArray[1] == 2) {//wants to add a tree
 
 		 	$checkmembers = $sqliCon->query("SELECT * FROM members WHERE phone_number = '$phone_number' ");
 
@@ -89,7 +89,7 @@ switch ($level) {
 		 	if($saveUser){
 
 		 		$message = "Hello ".$user_name." Thank you for registering with NEMA (U) ltd";		        
-				$apikey     = "8ca31226367ab4abde28fc34a62a2ef852d0e730b66c02348c98ed7499ca087c";			 
+				$apikey     = "";			 
 				$gateway    = new AfricasTalkingGateway("sandbox", $apikey,"sandbox");
 
 				$gateway->sendMessage($phone_number, $message); 
