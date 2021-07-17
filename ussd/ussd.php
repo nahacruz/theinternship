@@ -18,7 +18,7 @@
 
  switch ($level) {
      
-     case 1: 
+     case 0: 
 
             $response = "CON Welcome to the NEMA (u) limited";
 
@@ -30,12 +30,12 @@
         
          break;
 
-     case 2:
+     case 1:
              
 
              break;
 
-      case :
+      case 2:
                 
 
                  break;       
