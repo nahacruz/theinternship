@@ -12,13 +12,18 @@
  if (empty($testFromUser)) {
   
      $testFromUser = "0";
+
+ }else{
+
+     $testFromUser = "0*".$testFromUser;
+
  }
 
  $inputArray = explode("*",$testFromUser);
 
  switch ($level) {
      
-     case 0: 
+     case 1: 
 
             $response = "CON Welcome to the NEMA (u) limited";
 
@@ -30,12 +35,12 @@
         
          break;
 
-     case 1:
+     case 2:
              
 
              break;
 
-      case 2:
+      case 3:
                 
 
                  break;       
