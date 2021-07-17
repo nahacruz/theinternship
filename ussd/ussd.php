@@ -12,14 +12,9 @@
  if (empty($testFromUser)) {
   
      $testFromUser = "0";
-
- }else{
-
-    $testFromUser = "0*".$testFromUser;
-
  }
 
- $inputArray = explode("*",);
+ $inputArray = explode("*",$testFromUser);
 
  switch ($level) {
      
@@ -40,7 +35,7 @@
 
              break;
 
-      case 3:
+      case :
                 
 
                  break;       
