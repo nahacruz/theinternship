@@ -9,7 +9,7 @@
 
  $serviceCode - $_POST['serviceCode'];
 
- if (empty($testFromUser)) {
+ if(empty($testFromUser)){
   
      $testFromUser = "0";
 
@@ -20,6 +20,8 @@
  }
 
  $inputArray = explode("*",$testFromUser);
+
+ $level = count($inputArray);
 
  switch ($level) {
      
