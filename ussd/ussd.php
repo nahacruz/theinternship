@@ -29,15 +29,20 @@
 
             $response = "CON Welcome to the NEMA (u) limited";
 
-    $response .= "\n 1. Register";
+            $response .= "\n 1. Register";
 
-    $response .= "\n 2. Add a tree";
+            $response .= "\n 2. Add a tree";
 
-    echo $response;
+            echo $response;
         
          break;
 
      case 2:
+
+            $index_zero = $inputArray[0];
+            $index_one = $inputArray[1];
+
+            echo "CON At Index o = ".$inputArray[0]."\n Index 1 =".$inputArray[1]"; 
              
 
              break;
