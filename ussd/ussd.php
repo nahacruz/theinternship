@@ -42,7 +42,7 @@
             $index_zero = $inputArray[0];
             $index_one = $inputArray[1];
 
-            echo "CON At Index o = ".$inputArray[0]."\n Index 1 =".$inputArray[1]"; 
+            echo "CON At Index o = ".$inputArray[0]."\n Index 1 =".$inputArray[1]; 
              
 
              break;
