@@ -22,7 +22,7 @@ if($user_password != $confirm_user_password) {
 
 $mysqli_connection->query("INSERT INTO members(member_name,districts_id,PASSWORD,EMAIL_ADDRESS)VALUES('$pName','$district','$user_password','$emailAddress')");
 
-$message = "Hello ".$pName.", Thank you for creating an account with Climate change Uganda. You will login with your email and your password, Our team leader will contact you shortly for more information" ; 
+$message = "Hello ".$pName.", Thank you for creating an account with NEMA Uganda Limited. You will login with your email and your password, Our team leader will contact you shortly for more information" ; 
 
 $gateway    = new AfricasTalkingGateway("sandbox", "7c24837ad19e87b4f6c342f88458c3054d2870f92433e3786755c4c7b3c43125","sandbox"); 
 
