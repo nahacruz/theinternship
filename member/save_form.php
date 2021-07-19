@@ -24,6 +24,8 @@ $mysqli_connection->query("INSERT INTO members(member_name,districts_id,PASSWORD
 
 $message = "Hello ".$pName.", Thank you for creating an account with Climate change Uganda. You will login with your email and your password, Our team leader will contact you shortly for more information" ; 
 
-$gateway    = new AfricasTalkingGateway("sandbox", "89c0376e436020f9f67d62a6d68bfc1c395d65f29c3a14b5663c08105207962b","sandbox"); 
+$gateway    = new AfricasTalkingGateway("sandbox", "7c24837ad19e87b4f6c342f88458c3054d2870f92433e3786755c4c7b3c43125","sandbox"); 
+
+$gateway->sendMessage("+256704984861", $message);
 
 header("Location:list_of_users.php");
